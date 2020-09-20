@@ -19,9 +19,10 @@ Then logout (and login) or reboot (to apply the new group membership)
 ```
 $ su - ${USER}
 ```
-Check that your user is part of the group
+Check that your user is part of the group and view all docker commands
 ```
 $ id -nG
+$ docker
 ```
 Add other users (if you need to)
 ```
@@ -29,7 +30,7 @@ $ sudo usermod -aG docker some_username
 ```
 
 ## Support
-The above project has been tested with [Arch Linux](https://www.archlinux.org/) but there are no differences between distributions (only the installation process differs), for reporting bugs and requesting features it's best to open an issue. It's even better to accompany it with a Pull Request. ;)
+The above project has been tested on [Arch Linux](https://www.archlinux.org/) but there are no differences between distributions (only the installation process differs), for reporting bugs and requesting features it's best to open an issue. It's even better to accompany it with a Pull Request. ;)
 
 ## License
 GNU General Public License v3.0
