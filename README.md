@@ -19,7 +19,7 @@ Then logout (and login) or reboot (to apply the new group membership)
 ```
 $ su - ${USER}
 ```
-Check that your user is part of the group and view all docker commands
+Check that your user is part of the group and view all docker parameters
 ```
 $ id -nG
 $ docker
