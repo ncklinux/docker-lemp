@@ -1,7 +1,7 @@
 # docker-lemp
 Docker local development environment with PHP, NGiNX, MySQL/MariaDB (LEMP stack)
 
-Download and install [Docker](https://www.docker.com), on Arch Linux follow the [wiki](https://wiki.archlinux.org/index.php/docker), on OSX and Windows use the [official documentation](https://docs.docker.com/get-started/).
+Download and install [Docker](https://www.docker.com) and docker-compose, on Arch Linux follow the [wiki](https://wiki.archlinux.org/index.php/docker), [docker-compose](https://www.archlinux.org/packages/community/any/docker-compose/), on OSX and Windows use the [official documentation](https://docs.docker.com/get-started/).
 
 On Ubuntu 20.04 install it from the official Docker repository (to ensure we get the latest version), do the following:
 ```
@@ -28,7 +28,12 @@ Add other users (if you need to)
 ```
 $ sudo usermod -aG docker some_username
 ```
-
+To install Docker Compose first check the latest updated stable [version](https://github.com/docker/compose/releases) (replace X.XX.X with your version)
+```
+$ sudo curl -L "https://github.com/docker/compose/releases/download/X.XX.X/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+docker-compose --version
+```
 Lastly, you may need (but is not required) an account to [Docker Hub](https://hub.docker.com) if you like to [build your own images](https://docs.docker.com/get-started/part2/) and push them to Docker Hub.
 
 ## Support
