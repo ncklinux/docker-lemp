@@ -34,9 +34,9 @@ $ sudo curl -L "https://github.com/docker/compose/releases/download/X.XX.X/docke
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 ```
-Best practices for writing [Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
+Check also the best practices for writing [Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
 
-Lastly, you may need (not required) an account to [Docker Hub](https://hub.docker.com) if you like to [build your own images](https://docs.docker.com/get-started/part2/) and push them to Docker Hub.
+Lastly, you may need (but it is not necessary for this project) an account to [Docker Hub](https://hub.docker.com), just in case, if you like to [build your own images](https://docs.docker.com/get-started/part2/) and push them up to Docker Hub.
 
 ## Support
 The above project has been tested/hosted on [Arch Linux](https://www.archlinux.org/) but there are no differences between distributions (only the Docker installation process differs e.g. Arch Linux provides Pacman, Ubuntu Apt etc), for reporting bugs, requesting features or better methods, it's best to open an issue. It's even better to accompany it with a Pull Request. ;)
