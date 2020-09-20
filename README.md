@@ -34,10 +34,10 @@ $ sudo curl -L "https://github.com/docker/compose/releases/download/X.XX.X/docke
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 ```
-Lastly, you may need (but is not required) an account to [Docker Hub](https://hub.docker.com) if you like to [build your own images](https://docs.docker.com/get-started/part2/) and push them to Docker Hub.
+Lastly, you may need (not required) an account to [Docker Hub](https://hub.docker.com) if you like to [build your own images](https://docs.docker.com/get-started/part2/) and push them to Docker Hub.
 
 ## Support
-The above project has been tested/hosted on [Arch Linux](https://www.archlinux.org/) but there are no differences between distributions (only the Docker installation process differs), for reporting bugs and requesting features it's best to open an issue. It's even better to accompany it with a Pull Request. ;)
+The above project has been tested/hosted on [Arch Linux](https://www.archlinux.org/) but there are no differences between distributions (only the Docker installation process differs e.g. Arch Linux provides Pacman, Ubuntu Apt etc), for reporting bugs, requesting features or better methods, it's best to open an issue. It's even better to accompany it with a Pull Request. ;)
 
 ## License
 GNU General Public License v3.0
