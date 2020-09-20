@@ -28,7 +28,7 @@ Add other users (if you need to)
 ```
 $ sudo usermod -aG docker some_username
 ```
-To install Docker Compose first check the latest updated stable [version](https://github.com/docker/compose/releases) (replace X.XX.X with your version)
+To install Docker Compose, check the latest updated stable [version](https://github.com/docker/compose/releases) (replace X.XX.X with your version)
 ```
 $ sudo curl -L "https://github.com/docker/compose/releases/download/X.XX.X/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
