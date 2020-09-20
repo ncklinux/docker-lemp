@@ -29,6 +29,8 @@ Add other users (if you need to)
 $ sudo usermod -aG docker some_username
 ```
 
+Lastly, you may need (but is not required) an account to [Docker Hub](https://hub.docker.com) if you like to build your own images and push them to Docker Hub.
+
 ## Support
 The above project has been tested on [Arch Linux](https://www.archlinux.org/) but there are no differences between distributions (only the installation process differs), for reporting bugs and requesting features it's best to open an issue. It's even better to accompany it with a Pull Request. ;)
 
