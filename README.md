@@ -34,6 +34,8 @@ $ sudo curl -L "https://github.com/docker/compose/releases/download/X.XX.X/docke
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 ```
+Best practices for writing [Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
+
 Lastly, you may need (not required) an account to [Docker Hub](https://hub.docker.com) if you like to [build your own images](https://docs.docker.com/get-started/part2/) and push them to Docker Hub.
 
 ## Support
