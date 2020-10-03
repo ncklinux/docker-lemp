@@ -47,6 +47,11 @@ MariaDB root access, password: ncklinux_root
 $ docker-compose exec mysql bash
 $ mysql -u root -p
 ```
+Simply modify/copy your files in the public directory and refresh your browser with F5 (or Ctrl+F5). Also use "docker-compose exec phpfpm bash" (without quotes) to access the files on the container.
+```
+$ cd public
+$ ls -la
+```
 Stop and remove all docker containers and images
 ```
 $ docker ps -aq
@@ -56,11 +61,12 @@ $ docker rmi $(docker images -q)
 ```
 Another way to remove all stopped containers
 ```
-$ docker ps -a
-$ docker stop mariadb php-fpm nginx
+$ docker ps
+$ docker-compose stop
 $ docker container prune
 $ docker images
 $ docker rmi mariadb nginx bitnami/php-fpm
+$ docker ps && docker ps -a && docker images
 ```
 Also, the command below removes all stopped containers, dangling images and unused networks. The command will prompt you to confirm the operation "Are you sure you want to continue? [y/N]", just type "y" (without quotes)
 ```
