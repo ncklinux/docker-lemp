@@ -3,6 +3,8 @@ Docker local development environment with PHP, NGiNX, MySQL/MariaDB (LEMP stack)
 
 Download and install [Docker](https://www.docker.com) and docker-compose, on Arch Linux follow the [wiki](https://wiki.archlinux.org/index.php/docker) and also install [docker-compose](https://www.archlinux.org/packages/community/any/docker-compose/). On OSX and Windows use the [official documentation](https://docs.docker.com/get-started/).
 
+![Screenshot](./media/docker_phpinfo.png)
+
 On Ubuntu 20.04 install it from the official Docker repository (to ensure we get the latest version), do the following:
 ```
 $ sudo apt update
