@@ -42,6 +42,11 @@ $ docker-compose up -d
 $ docker-compose ps
 $ netstat -tupln
 ```
+MariaDB root access, password: ncklinux_root
+```
+$ docker-compose exec mysql bash
+$ mysql -u root -p
+```
 Stop and remove all docker containers and images
 ```
 $ docker ps -aq
