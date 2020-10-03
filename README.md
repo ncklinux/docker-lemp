@@ -58,7 +58,7 @@ $ docker images
 $ docker rmi IMAGE_NAMES
 $ docker system prune
 ```
-Also, the command below removes all stopped containers, dangling images and unused networks
+Also, the command below removes all stopped containers, dangling images and unused networks. The command will prompt you to confirm the operation "Are you sure you want to continue? [y/N]", just type "y" (without quotes)
 ```
 $ docker system prune
 ```
