@@ -1,6 +1,17 @@
 version: '3'
 services:
 
+  # PHP-FPM (FastCGI Process Manager) service
+  phpfpm:
+    image: 'bitnami/php-fpm'
+    container_name: php-fpm
+    ports:
+        - '9000:9000'
+    volumes:
+        - ./public:/myprojects
+    networks:
+      - app-network
+
   # NGiNX service
   nginx:
     image: nginx
@@ -10,6 +21,8 @@ services:
     ports:
       - "80:80"
       - "443:443"
+    volumes:
+        - ./public:/myprojects
     networks:
       - app-network
 
