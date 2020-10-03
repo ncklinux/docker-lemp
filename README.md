@@ -57,11 +57,10 @@ $ docker rmi $(docker images -q)
 Another way to remove all stopped containers
 ```
 $ docker ps -a
-$ docker stop CONTAINER_NAMES
+$ docker stop mariadb php-fpm nginx
 $ docker container prune
 $ docker images
-$ docker rmi IMAGE_NAMES
-$ docker system prune
+$ docker rmi mariadb nginx bitnami/php-fpm
 ```
 Also, the command below removes all stopped containers, dangling images and unused networks. The command will prompt you to confirm the operation "Are you sure you want to continue? [y/N]", just type "y" (without quotes)
 ```
