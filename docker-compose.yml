@@ -1,11 +1,33 @@
 version: '3'
 services:
 
-  mysql:
-    image: 'mariadb'
+  # NGiNX service
+  nginx:
+    image: nginx
+    container_name: nginx
+    restart: unless-stopped
+    tty: true
     ports:
-        - '3306:3306'
+      - "80:80"
+      - "443:443"
+    networks:
+      - app-network
+
+  # MariaDB service
+  mysql:
+    image: mariadb
+    container_name: mariadb
+    restart: unless-stopped
+    ports:
+        - "3306:3306"
     volumes:
         - ./db-data:/var/lib/mysql
     environment:
         - MYSQL_ROOT_PASSWORD=ncklinux_root
+    networks:
+      - app-network
+
+# Docker Networks
+networks:
+  app-network:
+    driver: bridge
