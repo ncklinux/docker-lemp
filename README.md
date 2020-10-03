@@ -61,7 +61,7 @@ $ docker rmi $(docker images -q)
 ```
 Another way to remove all stopped containers
 ```
-$ docker ps
+$ docker-compose ps
 $ docker-compose stop
 $ docker container prune
 $ docker images
