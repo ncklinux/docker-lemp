@@ -34,12 +34,33 @@ $ sudo curl -L "https://github.com/docker/compose/releases/download/X.XX.X/docke
 $ sudo chmod +x /usr/local/bin/docker-compose
 $ docker-compose --version
 ```
-Run docker-compose
+Run docker-compose and check the ports
 ```
 $ git clone git@github.com:ncklinux/docker-lemp.git
 $ cd docker-lemp
 $ docker-compose up -d
 $ docker-compose ps
+$ netstat -tupln
+```
+Stop and remove all docker containers and images
+```
+$ docker ps -aq
+$ docker stop $(docker ps -aq)
+$ docker rm $(docker ps -aq)
+$ docker rmi $(docker images -q)
+```
+Another way to remove all stopped containers
+```
+$ docker ps -a
+$ docker stop CONTAINER_NAMES
+$ docker container prune
+$ docker images
+$ docker rmi IMAGE_NAMES
+$ docker system prune
+```
+Also, the command below removes all stopped containers, dangling images and unused networks
+```
+$ docker system prune
 ```
 Check also the best practices for writing [Dockerfiles](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
 
