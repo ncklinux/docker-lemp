@@ -39,7 +39,8 @@ services:
     volumes:
         - ./db-data:/var/lib/mysql
     environment:
-        - MYSQL_ROOT_PASSWORD=ncklinux_root
+        MYSQL_DATABASE: test
+        MYSQL_ROOT_PASSWORD: ncklinux_root
     networks:
       - app-network
 
