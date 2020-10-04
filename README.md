@@ -49,7 +49,7 @@ MariaDB root access, password: ncklinux_root
 $ docker-compose exec mysql bash
 $ mysql -u root -p
 ```
-Simply modify/copy your files in the public directory and refresh your browser with F5 (or Ctrl+F5). Also use "docker-compose exec phpfpm bash" (without quotes) to access the files on the container.
+Modify/copy your files in the public directory and refresh [http://localhost](http://localhost) on your browser (with F5 or Ctrl+F5). Also use "docker-compose exec phpfpm bash" (without quotes) to access the files on the container.
 ```
 $ cd public
 $ ls -la
