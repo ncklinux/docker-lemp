@@ -44,10 +44,18 @@ $ docker-compose up -d
 $ docker-compose ps
 $ netstat -tupln
 ```
-MariaDB root access, password: ncklinux_root
+Test MariaDB root access, password: ncklinux_root and add some data [localhost/mysql_connection_test.php](http://localhost/mysql_connection_test.php)
+![Screenshot](./media/mariadb_test.png)
 ```
 $ docker-compose exec mysql bash
 $ mysql -u root -p
+$ SHOW DATABASES;
+$ USE test;
+$ CREATE TABLE authors (id INT, name VARCHAR(20), email VARCHAR(20));
+$ SHOW TABLES;
+$ INSERT INTO authors (id,name,email) VALUES(1,"ncklinux1","ncklinux1@test.com");
+$ INSERT INTO authors (id,name,email) VALUES(1,"ncklinux2","ncklinux2@test.com");
+$ SELECT * FROM authors;
 ```
 Modify/copy your files in the public directory and refresh [http://localhost](http://localhost) on your browser (with F5 or Ctrl+F5). Also use "docker-compose exec phpfpm bash" (without quotes) to access the files on the container.
 ```
